@@ -10,6 +10,25 @@ public class AccountManager {
       Scanner userInput = new Scanner(System.in);
 
 
+      //make profile object here
+
+        //manually testing
+
+       // UserProfile user1 = new UserProfile("tsmith",  "tsmith@email.com");
+
+
+
+
+        //make null object
+        UserProfile user1 = null;
+
+
+
+
+
+
+
+
         while(true) {
 
 
@@ -32,7 +51,13 @@ public class AccountManager {
 
 
                 case 1:
-                    System.out.println("We are in option 1");
+                    System.out.print("Enter username: ");
+                    String username = userInput.nextLine();
+                    System.out.print("Enter email: ");
+                    String email = userInput.nextLine();
+
+                     user1 = new UserProfile(username, email);
+                    System.out.println("User profile created successfully!");
                     break;
 
                 case 2:
